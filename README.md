@@ -18,14 +18,6 @@
 
 ![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20201021161045.png)
 
-## :snowman:笔记网站（更新）
-
-https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面试记录）
-
-https://yangchaoyi.vip/iBook/ （基于vuepress搭建的前端学习笔记，目前还在建设当中）
-
-为了让您更好的阅读本仓库笔记，考虑还是建了个人网站，本仓库内容陆续都会更新到网站上，你可以根据分类找到你想阅读的文章，隆重感谢给本仓库点 Star 的小伙伴!
-
 
 ## :bulb:前言
 本仓库刷题路线参考 <a href="https://github.com/sl1673495/leetcode-javascript">ssh</a>  （给大佬点赞）
