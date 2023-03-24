@@ -7,7 +7,7 @@
 
 ## :seedling:仓库地址
 
-传送门：https://github.com/Chocolate1999/leetcode-javascript
+传送门：https://github.com/ChickenTreasure/JavaScript-LeetCode
 ## :loudspeaker:公告
 感谢访问本站，若喜欢请收藏，star支持一下 ✿✿ヽ(°▽°)ノ✿
 
