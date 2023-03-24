@@ -1,5 +1,5 @@
 # **前言：**
-## **本仓库是在[Chocolate1999/leetcode-javascript](https://github.com/Chocolate1999/leetcode-javascript)仓库的基础下，进行一些刷题，觉得不错的朋友可以直接跳转到原仓库链接进行学习。本人会在原仓库的基础上更新题库。**
+## **本仓库是在[Chocolate1999/leetcode-javascript](https://github.com/Chocolate1999/leetcode-javascript)仓库的基础下，进行一些刷题更新，觉得不错的朋友可以直接跳转到原仓库链接进行学习。本人会在原仓库的基础上更新题库。**
 
 ##  :sunny:leetcode-javascript
 
