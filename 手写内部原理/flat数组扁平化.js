@@ -13,4 +13,8 @@ const _flat = function(arr, depth = 0) {
 }
 
 let arr1 = [1, 2, [3, 4, [5]], 6, 7]
+<<<<<<< HEAD
 console.log(_flat(arr1, 2));
+=======
+console.log(_flat(arr1, 2));
+>>>>>>> 9c020ac16616958163d7b7d4a378c0fdbefb53a4

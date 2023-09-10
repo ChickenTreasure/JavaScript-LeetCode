@@ -11,4 +11,8 @@ Array.prototype._map = function(fn) {
 }
 
 let arr1 = [1, 2, 3]
+<<<<<<< HEAD
 console.log(arr1._map(item => item * 2))
+=======
+console.log(arr1._map(item => item * 2))
+>>>>>>> 9c020ac16616958163d7b7d4a378c0fdbefb53a4
