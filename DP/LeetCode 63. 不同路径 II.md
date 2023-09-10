@@ -63,11 +63,11 @@ var uniquePathsWithObstacles = function (obstacleGrid) {
     dp[0][0] = 1; // 起点路径数设置为1
     for (let i = 1; i < m; i++) {
         // 如果第0列有一个地方出现了障碍，那么当前这个点的路径数和后续的路径数都设置为0
-        dp[i][0] = obstacleGrid[i][0] == 1 || dp[i - 1][0] == 0 ? 0 : 1;
+        dp[i][0] = (obstacleGrid[i][0] == 1 || dp[i - 1][0] == 0) ? 0 : 1;
     }
     for (let i = 1; i < n; i++) {
         // 如果第0行有一个地方出现了障碍，那么当前这个点的路径数和后续的路径数都设置为0
-        dp[0][i] = obstacleGrid[0][i] == 1 || dp[0][i - 1] == 0 ? 0 : 1;
+        dp[0][i] = (obstacleGrid[0][i] == 1 || dp[0][i - 1] == 0) ? 0 : 1;
     }
     for (let i = 1; i < m; i++) {
         for (let j = 1; j < n; j++) {
