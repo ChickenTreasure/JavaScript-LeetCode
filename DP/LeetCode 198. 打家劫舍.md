@@ -60,7 +60,7 @@ var rob = function (nums) {
         dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);
     }
     // 最后就看最后两间房子金额总和的最大值
-    return Math.max(dp[n - 1], dp[n - 2]);
+    return dp[n-1];
 };
 ```
 
