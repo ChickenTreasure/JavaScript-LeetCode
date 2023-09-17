@@ -21,4 +21,8 @@ var longestPalindrome = function(s) {
         }
     }
     return res;
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> c455786913ad2fd29272f6cca9ff28c1d30b1497
