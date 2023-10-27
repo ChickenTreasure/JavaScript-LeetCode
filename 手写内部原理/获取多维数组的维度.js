@@ -20,7 +20,7 @@ function a(arr) {
     let depth = 0;
 
     function depthCalculate(arr, currentDepth) {
-        if (Array.isArray(arr)) {
+        if (!Array.isArray(arr)) {
             return;
         }
         depth = Math.max(depth, currentDepth);
