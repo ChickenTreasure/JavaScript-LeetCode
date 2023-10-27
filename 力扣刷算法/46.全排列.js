@@ -17,3 +17,16 @@ var permute = function(nums) {
 
 let arr1 = [1, 2, 3]
 console.log(permute(arr1));
+
+
+const _permute = string => {
+    if (string.length <= 1) return [string];
+    let results = [];
+    for (let i = 0; i < string.length; i++) {
+        let nums = string.split('').filter(item => item !== string[i]);
+        _permute(nums.join('')).forEach(item1 => {
+            results.push(string[i] + item1);
+        })
+    }
+    return results;
+}
