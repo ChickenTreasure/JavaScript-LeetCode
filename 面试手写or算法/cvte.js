@@ -36,3 +36,67 @@ function TimeCalculate(arr, obj) {
     }
     return newArr;
 }
+
+
+
+
+function calculateLongestTime(tasks) {
+    // 构建任务图和入度表
+    const graph = {}; // 任务图
+    const inDegree = {}; // 入度表
+
+    for (const task of tasks) {
+        const { id, cost, dep } = task;
+        graph[id] = graph[id] || [];
+        inDegree[id] = inDegree[id] || 0;
+        inDegree[dep] = inDegree[dep] || 0;
+
+        if (dep) {
+            graph[dep] = graph[dep] || [];
+            graph[dep].push(id);
+            inDegree[id]++;
+        }
+
+        graph[id].push(cost);
+    }
+
+    // 拓扑排序
+    const queue = [];
+    for (const task in inDegree) {
+        if (inDegree[task] === 0) {
+            queue.push(task);
+        }
+    }
+
+    let longestTime = 0;
+    const result = [];
+
+    while (queue.length > 0) {
+        const currentTask = queue.shift();
+        result.push(currentTask);
+
+        if (graph[currentTask]) {
+            for (const nextTask of graph[currentTask]) {
+                inDegree[nextTask]--;
+                if (inDegree[nextTask] === 0) {
+                    queue.push(nextTask);
+                }
+                graph[nextTask][0] += graph[currentTask][0]; // 累加耗时
+                longestTime = Math.max(longestTime, graph[nextTask][0]);
+            }
+        }
+    }
+
+    console.log(result.join(' ')); // 输出最长耗时的任务执行顺序
+    return longestTime;
+}
+
+// 测试
+const tasks = [
+    { id: '1', cost: 100 },
+    { id: '2', cost: 100, dep: '4' },
+    { id: '4', cost: 100, dep: '3' },
+    { id: '3', cost: 100 },
+];
+
+console.log(calculateLongestTime(tasks)); // 输出 300

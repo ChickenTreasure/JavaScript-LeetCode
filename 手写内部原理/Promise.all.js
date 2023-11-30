@@ -9,7 +9,7 @@ Promise.myAll = function(promises) {
                 c[i] = value;
                 if (a === b) return resolve(c);
             }, err => {
-                return reject(error)
+                return reject(err)
             }))
         }
     })
